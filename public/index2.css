@@ -1,0 +1,18 @@
+#task-container{
+    border: 2px solid black;
+    height: 250px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px;
+    background-color: rgb(189, 245, 245);
+}
+.fa-solid{
+   font-size: xx-large;
+    margin-left: 40px;
+    margin-top: 50px;
+
+}
+.fa-regular{
+    font-size: xx-large;
+    margin-left: 130px;
+}

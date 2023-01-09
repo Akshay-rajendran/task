@@ -1,0 +1,36 @@
+h1{
+    margin-left: 450px;
+    /* /* color: red; */
+    text-decoration: underline  ;
+}
+h2{
+    margin-left: 200px;
+    text-decoration: underline;
+    color: rgb(252, 247, 247);
+}
+input{
+    margin-left: 200px;
+}
+button{
+    margin-left: 200px;
+    margin-top: 9px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    border: none;
+
+}
+form{
+    
+    margin-top: 100px;
+    background-color: rgba(6, 6, 6, 0.5);
+    border-radius: 10px;
+}
+.box{
+    width: 350px;
+    height: 100px;
+    border: 2px solid black;
+}
+body{
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20201109/pngtree-abstract-sticky-note-mokeup-with-plant-shadow-background-image_466346.jpg");
+    background-size: 100vw 100vh;
+}
