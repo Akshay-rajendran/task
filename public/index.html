@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>taskform</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
     <h1>To-D0 List</h1>
     <form action="">
-        <h2>Task</h2>
-        <input type="text" placeholder="enter task">
-        <h2>Discription</h2>
-        <input type="text" class="box" placeholder="about task"><br>
-        <button>view List</button>
+      <h2>Task</h2>
+      <input class="taskadding" type="text" placeholder="enter task" />
+      <h2>Discription</h2>
+      <input
+        class="taskdiscription"
+        type="text"
+        class="box"
+        placeholder="about task"
+      /><br />
+      <button>submit</button>
     </form>
-    
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
