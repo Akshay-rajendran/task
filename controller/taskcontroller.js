@@ -7,7 +7,10 @@
             succes:true,
             msg:`task addedd`
         })}catch(error){
-            res.json("u should add task")
+            res.json({
+                success:false,
+                msg:"something wrong, check again"
+            })
         }
 
     }
@@ -30,7 +33,10 @@ const singletask=async(req,res)=>{
     try {
         res.json(await taskmodel.findOne({_id:req.params._id}))
     } catch (error) {
-        res.json("something happend cant get single task")
+        res.json({
+            success:false,
+            msg:"check again something wrong"
+        })
     }
 }
 const taskupdate=async(req,res)=>{
@@ -38,7 +44,10 @@ const taskupdate=async(req,res)=>{
         await taskmodel.findOneAndUpdate({id:req.params.id},req.body,{runValidators:true})
         res.json("successfully updated")
     } catch (error) {
-        res.json("cant updated,something went wrong")
+        res.json({
+            success:false,
+            msg:"cant updated,something went wrong"
+        })
     }
 }
 
@@ -50,7 +59,10 @@ const taskdelete=async(req,res)=>{
             msg:"deleted the selected one"
         })
     } catch (error) {
-        
+       res.json({
+        succes:false,
+        msg:"something wrong ,cannot delete"
+       }) 
     }
 }
     module.exports={
