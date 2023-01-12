@@ -9,7 +9,12 @@ async function fetchData() {
       <p>
        ${singletask.task}
       </p>
-      <a href="http://localhost:5000/edit.html?id=${singletask._id}"> <i class="fa-solid fa-pen-to-square"></i></a>  
+      <P>
+      ${singletask.discription}</p>
+      <div class="icons">
+      <a href="http://localhost:5000/edit.html?id=${singletask._id}"> <i class="fa-solid fa-pen-to-square"></i></a> 
+      <i class="fa-solid fa-trash"></i> 
+      </div>
       <p class="fa-regular">${
         singletask.complete ? "completed" : "not completed"
       }</p>

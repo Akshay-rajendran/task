@@ -41,7 +41,7 @@ const singletask=async(req,res)=>{
 }
 const taskupdate=async(req,res)=>{
     try {
-        await taskmodel.findOneAndUpdate({id:req.params.id},req.body,{runValidators:true})
+        await taskmodel.findOneAndUpdate({_id:req.params.id},req.body,{runValidators:true})
         res.json("successfully updated")
     } catch (error) {
         res.json({
