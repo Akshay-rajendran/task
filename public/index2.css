@@ -1,4 +1,4 @@
-#task-container{
+#task-container {
     border: 2px solid black;
     height: 250px;
     width: 300px;
@@ -7,75 +7,82 @@
     background-color: rgb(189, 245, 245);
     margin-bottom: 15px;
 
-    
-        /* width: 190px; */
-        /* height: 254px; */
-        border-radius: 50px;
-        background: #ffffff;
-        box-shadow: 20px 10px 80px #bebebe,
-                      -20px -20px 60px #ffffff;
-       
+
+    /* width: 190px; */
+    /* height: 254px; */
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow: 20px 10px 80px #bebebe,
+        -20px -20px 60px #ffffff;
+
 
 }
 
-       
-       
-       
 
-.fa-pen-to-square{
-   font-size: xx-large;
+
+
+
+.fa-pen-to-square {
+    font-size: xx-large;
     margin-right: 170px;
     /* margin-top: 50px; */
 
 }
-.fa-regular{
-    font-size: x
-    -large;
+
+.fa-regular {
+    font-size: x -large;
     /* margin-right: 20px; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
-.wrapper{
+
+.wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.fa-solid{
-    font-size:x-large;
-    
+
+.fa-solid {
+    font-size: x-large;
+
 }
-.icons{
+
+.icons {
     display: flex;
     justify-content: flex-end;
     margin-top: 50px;
 
 }
 
-p{
+p {
     margin-left: 15px;
     margin-top: 25px;
 }
-.h11{
+
+.h11 {
     display: flex;
     justify-content: center;
     text-decoration: underline;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.fa-trash{
+
+.fa-trash {
     margin-right: 40px;
 }
-.discription{
-    font-family:'Courier New', Courier, monospace;
+
+.discription {
+    font-family: 'Courier New', Courier, monospace;
 }
-.home{
+
+.home {
     transform: translateX(80vw) translateY(70vh);
-position: fixed;
-border: none;
-/* width: 60px; */
-/* height: 20px; */
-/* border-radius: 10px; */
-/* background-color: red; */
+    position: fixed;
+    border: none;
+    /* width: 60px; */
+    /* height: 20px; */
+    /* border-radius: 10px; */
+    /* background-color: red; */
 
 
 
@@ -92,13 +99,13 @@ border: none;
     /* position: relative; */
     z-index: 1;
     overflow: hidden;
-   }
-   
-   button:hover {
+}
+
+button:hover {
     color: black;
-   }
-   
-   button:after {
+}
+
+button:after {
     content: "";
     background: white;
     position: absolute;
@@ -109,11 +116,11 @@ border: none;
     bottom: 0;
     transform: skewX(-45deg) scale(0, 1);
     transition: all 0.5s;
-   }
-   
-   button:hover:after {
+}
+
+button:hover:after {
     transform: skewX(-45deg) scale(1, 1);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-   
+
 }

@@ -1,6 +1,6 @@
 let para = document.querySelector(".wrapper")
-let deletee =document.querySelector(".fa-solid")
-let home=document.querySelector(".home")
+let deletee = document.querySelector(".fa-solid")
+let home = document.querySelector(".home")
 
 async function fetchData() {
   let { data } = await axios.get("http://localhost:5000/getAllTask");
@@ -13,9 +13,8 @@ async function fetchData() {
       </p>
       <P class="discription">
       ${singletask.discription}</p>
-      <p class="fa-regular">${
-        singletask.complete ? "completed" : "not completed"
-      }</p>
+      <p class="fa-regular">${singletask.complete ? "completed" : "not completed"
+        }</p>
       <div class="icons">
       <a href="http://localhost:5000/edit.html?id=${singletask._id}"> <i class="fa-solid fa-pen-to-square"></i></a> 
       <i class="fa-solid fa-trash" data-id=${singletask._id}></i> 
@@ -30,29 +29,29 @@ async function fetchData() {
 fetchData();
 
 
-para.addEventListener("click",async(e)=>{
- 
+para.addEventListener("click", async (e) => {
 
-  let deletee=e.target.classList.contains("fa-trash");
+
+  let deletee = e.target.classList.contains("fa-trash");
   console.log(deletee)
-  if(deletee) {
-    let id=e.target.getAttribute("data-id")
+  if (deletee) {
+    let id = e.target.getAttribute("data-id")
     console.log(id);
     alert("sure u want to delete")
-      let response=await axios.delete("http://localhost:5000/delete/"+id)
-      alert("deleted")
-      window.location.href="http://localhost:5000/index2.html"
+    let response = await axios.delete("http://localhost:5000/delete/" + id)
+    alert("deleted")
+    window.location.href = "http://localhost:5000/index2.html"
 
-      
+
   }
 
-  
+
 }
 )
 
 
-home.addEventListener("click",()=>{
-  window.location.href="http://localhost:5000/index.html"
+home.addEventListener("click", () => {
+  window.location.href = "http://localhost:5000/index.html"
 
 })
 
