@@ -1,5 +1,6 @@
 let para = document.querySelector(".wrapper")
 let deletee =document.querySelector(".fa-solid")
+let home=document.querySelector(".home")
 
 async function fetchData() {
   let { data } = await axios.get("http://localhost:5000/getAllTask");
@@ -32,7 +33,7 @@ fetchData();
 para.addEventListener("click",async(e)=>{
  
 
-  let deletee=e.target.classList.contains("fa-solid");
+  let deletee=e.target.classList.contains("fa-trash");
   console.log(deletee)
   if(deletee) {
     let id=e.target.getAttribute("data-id")
@@ -49,6 +50,11 @@ para.addEventListener("click",async(e)=>{
 }
 )
 
+
+home.addEventListener("click",()=>{
+  window.location.href="http://localhost:5000/index.html"
+
+})
 
 
 
