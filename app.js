@@ -1,11 +1,11 @@
 const express=require("express")
 app=express()
-
+const cors=require("cors")
 const taskrouter=require("./routes/task")
 const mongoose=require("mongoose")
 mongoose.connect("mongodb+srv://database:123@cluster0.n3lgztl.mongodb.net/taskdb?retryWrites=true&w=majority")
 
-
+app.use(cors())
 app.use(express.urlencoded({ extended: false }))
 app.use(express.static("./public"))
 app.use(express.json())
